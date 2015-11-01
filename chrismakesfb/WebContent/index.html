@@ -1,0 +1,160 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Welcome to Wish Wall</title>
+<meta name="description" content="Your description goes here">
+<meta name="keywords" content="your,keywords,goes,here">
+<meta name="author" content="Your Name">
+<meta name="generator" content="WYSIWYG Web Builder 10 Trial Version - http://www.wysiwygwebbuilder.com">
+<link href="css/variant-duo.css" rel="stylesheet" type="text/css">
+<link href="css/index.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<script>
+
+var userData=null;
+var bday=null;
+var fid=null;
+var loc=null;
+var myname=null;
+// This is called with the results from from FB.getLoginStatus().
+function statusChangeCallback(response) {
+console.log('statusChangeCallback');
+console.log(response);
+	// The response object is returned with a status field that lets the
+	// app know the current login status of the person.
+	// Full docs on the response object can be found in the documentation
+	// for FB.getLoginStatus().
+	if (response.status === 'connected') {
+	// Logged into your app and Facebook.
+		testAPI();
+	}
+	else if (response.status === 'not_authorized') {
+	// The person is logged into Facebook, but not your app.
+	document.getElementById('status').innerHTML = 'Please log ' + 'into this app.';
+
+	
+	} 
+	else {
+	// The person is not logged into Facebook, so we're not sure if
+	// they are logged into this app or not.
+	document.getElementById('status').innerHTML = 'Please log ' + 'into Facebook.';
+	
+	}
+	}
+
+	function publishme(response)
+	{
+		FB.login(function()
+				{   
+					
+					FB.api('/me/feed', 'post', {message: 'Hi Chris, Ur BDay is ' + getAge(bday) + gen});  }, {scope: 'publish_actions'}
+					);
+	}
+	// This function is called when someone finishes with the Login
+	// Button. See the onlogin handler attached to it in the sample
+	// code below.
+	function checkLoginState() {
+		FB.getLoginStatus(function(response) {
+		statusChangeCallback(response);
+	});
+	}
+
+	window.fbAsyncInit = function() {
+	FB.init({
+	appId : '1567073246896500',
+	cookie : true, // enable cookies to allow the server to access 
+	// the session
+	xfbml : true, // parse social plugins on this page
+	version : 'v2.1' // use version 2.1
+	});
+
+		// Now that we've initialized the JavaScript SDK, we call 
+		// FB.getLoginStatus(). This function gets the state of the
+		// person visiting this page and can return one of three states to
+		// the callback you provide. They can be:
+		//
+		// 1. Logged into your app ('connected')
+		// 2. Logged into Facebook, but not your app ('not_authorized')
+		// 3. Not logged into Facebook and can't tell if they are logged into
+		// your app or not.
+	//
+		// These three cases are handled in the callback function.
+
+	FB.getLoginStatus(function(response) {
+	statusChangeCallback(response);
+	});
+
+	};
+
+//Load the SDK asynchronously
+	(function(d, s, id) {
+		var js, fjs = d.getElementsByTagName(s)[0];
+		if (d.getElementById(id)) return;
+		js = d.createElement(s); js.id = id;
+		js.src = "//connect.facebook.net/en_US/sdk.js";
+		fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));
+
+//Here we run a very simple test of the Graph API after login is
+//successful. See statusChangeCallback() for when this call is made.
+
+	function getAge(birth) {
+			ageMS = Date.parse(Date()) - Date.parse(birth);
+			age = new Date();
+			age.setTime(ageMS);
+			ageYear = age.getFullYear() - 1970;
+
+			return ageYear;
+
+	  	// ageMonth = age.getMonth(); // Accurate calculation of the month part of the age
+			// ageDay = age.getDate();    // Approximate calculation of the day part of the age
+	}
+	function testAPI() {
+		console.log('Welcome! Fetching your information.... ');
+		FB.api('/me', function(response) {
+		console.log('Successful login for: ' + response.name);
+		document.getElementById('status').innerHTML ='Thanks for logging in, ' + response.name +'!';
+		bday=response.birthday;
+		document.getElementById('myfbid').value=response.id;
+		document.getElementById('myloc').value=response.location.name;
+		document.getElementById('myname').value=response.name;
+	});
+		
+		
+	}
+</script>
+<div id="container">
+<div id="wb_Shape1" style="position:absolute;left:16px;top:115px;width:980px;height:560px;z-index:0;">
+	<img src="images/img0003.gif" id="Shape1" alt="" style="width:980px;height:560px;">
+</div>
+
+
+<div id="wb_Text1" style="position:absolute;left:14px;top:15px;width:982px;height:35px;z-index:1;text-align:left;">
+<span style="color:#2A7A9A;font-family:tahoma;font-size:29px;"><strong>Wish Wall</strong></span></div>
+<div id="wb_Text2" style="position:absolute;left:14px;top:56px;width:982px;height:21px;z-index:2;text-align:left;">
+<span style="color:#555555;font-family:tahoma;font-size:17px;">Wish at will</span></div>
+<div id="wb_Text9" style="position:absolute;left:34px;top:644px;width:942px;height:14px;text-align:center;z-index:3;">
+</div>
+<div id="wb_Text10" style="position:absolute;left:14px;top:697px;width:982px;height:22px;text-align:right;z-index:4;">
+<span style="color:#888888;font-family:tahoma;font-size:9.3px;">Copyright © 2010 Christopher Lagali<br>Template design by <a href="http://andreasviklund.com/" class="style2">Andreas Viklund</a></span></div>
+<a href="http://www.wysiwygwebbuilder.com" target="_blank"><img src="images/builtwithwwb10.png" alt="WYSIWYG Web Builder" style="position:absolute;left:454px;top:735px;border-width:0;z-index:250"></a>
+<div id="wb_Text3" style="position:absolute;left:868px;top:89px;width:199px;height:16px;z-index:6;text-align:left;">
+
+<fb:login-button scope="public_profile,email,user_birthday,user_location,user_photos,user_about_me,user_activities,user_friends,read_friendlists" onlogin="checkLoginState();">
+</fb:login-button>
+<br>
+
+<div id="status">
+</div>
+<form action="/MyRoute?act=login" method="post">
+	<input type="hidden" name="myfbid" id="myfbid">
+	<input type="hidden" name="myloc" id="myloc">
+	<input type="hidden" name="myname" id="myname">
+	<input type="submit" name="submit" value="Start">
+</form>
+</div>
+</div>
+</body>
+</html>

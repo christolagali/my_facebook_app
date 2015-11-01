@@ -1,0 +1,272 @@
+div#container
+{
+   width: 996px;
+   position: relative;
+   margin: 0 auto 0 auto;
+   text-align: left;
+}
+body
+{
+   background-color: #E4E4E4;
+   background-image: url();
+   background-position: left top;
+   background-repeat: repeat;
+   color: #333333;
+   font-family: Arial;
+   font-size: 13px;
+   margin: 0;
+   text-align: center;
+}
+#Shape1
+{
+   border-width: 0;
+}
+#wb_Text1 
+{
+   background-color: transparent;
+   border: 0px #000000 solid;
+   padding: 0;
+   margin: 0;
+   text-align: left;
+}
+#wb_Text1 div
+{
+   text-align: left;
+}
+#wb_Text2 
+{
+   background-color: transparent;
+   border: 0px #000000 solid;
+   padding: 0;
+   margin: 0;
+   text-align: left;
+}
+#wb_Text2 div
+{
+   text-align: left;
+}
+#wb_Text4 
+{
+   background-color: transparent;
+   border: 0px #000000 solid;
+   padding: 0;
+   margin: 0;
+   text-align: left;
+}
+#wb_Text4 div
+{
+   text-align: left;
+}
+#wb_Text8 
+{
+   background-color: transparent;
+   border: 0px #000000 solid;
+   padding: 0;
+   margin: 0;
+   text-align: left;
+}
+#wb_Text8 div
+{
+   text-align: left;
+   white-space: nowrap;
+}
+#TabMenu1
+{
+   text-align: left;
+   float: left;
+   margin: 0;
+   width: 100%;
+   font-family: Arial;
+   font-size: 16px;
+   font-weight: bold;
+   list-style-type: none;
+   padding: 8px 0px 8px 0px;
+}
+#TabMenu1 li
+{
+   float: left;
+}
+#TabMenu1 li a.active, #TabMenu1 li a:hover.active
+{
+   border-bottom: 1px solid #2A7A9A;
+   background-color: #2A7A9A;
+   color: #FFFFFF;
+   position: relative;
+   font-weight: bold;
+   text-decoration: none;
+   z-index: 2;
+}
+#TabMenu1 li a
+{
+   padding: 8px 10px 8px 10px;
+   border: 0px solid #376BAD;
+   background-color: #E4E4E4;
+   color: #555555;
+   margin-right: 3px;
+   text-decoration: none;
+   border-bottom: none;
+   position: relative;
+   top: 0;
+}
+#TabMenu1 li a:hover
+{
+   background: #FFFFFF;
+   color: #555555;
+   font-weight: bold;
+   text-decoration: none;
+}
+#Line1
+{
+   color: #DDDDDD;
+   background-color: #DDDDDD;
+   border-width: 0;
+   margin: 0;
+   padding: 0;
+}
+#Line2
+{
+   color: #DDDDDD;
+   background-color: #DDDDDD;
+   border-width: 0;
+   margin: 0;
+   padding: 0;
+}
+#Line3
+{
+   color: #DDDDDD;
+   background-color: #DDDDDD;
+   border-width: 0;
+   margin: 0;
+   padding: 0;
+}
+#Line4
+{
+   color: #DDDDDD;
+   background-color: #DDDDDD;
+   border-width: 0;
+   margin: 0;
+   padding: 0;
+}
+#Shape2
+{
+   border-width: 0;
+}
+#wb_Textstatus 
+{
+   background-color: transparent;
+   border: 0px #000000 solid;
+   padding: 0;
+   margin: 0;
+   text-align: left;
+}
+#wb_Textstatus div
+{
+   text-align: left;
+   white-space: nowrap;
+}
+#cid
+{
+   border: 1px #A9A9A9 solid;
+   background-color: #FFFFFF;
+   color :#333333;
+   font-family: Arial;
+   font-size: 13px;
+   text-align: left;
+   vertical-align: middle;
+}
+#uid
+{
+   border: 1px #A9A9A9 solid;
+   background-color: #FFFFFF;
+   color :#333333;
+   font-family: Arial;
+   font-size: 13px;
+   text-align: left;
+   vertical-align: middle;
+}
+#status
+{
+   border: 1px #A9A9A9 solid;
+   background-color: #FFFFFF;
+   color :#333333;
+   font-family: Arial;
+   font-size: 13px;
+   text-align: left;
+   vertical-align: middle;
+}
+#TextArea1
+{
+   border: 1px #A9A9A9 solid;
+   background-color: #FFFFFF;
+   color :#333333;
+   font-family: Arial;
+   font-size: 13px;
+   text-align: left;
+   resize: none;
+}
+#wb_Text3 
+{
+   background-color: transparent;
+   border: 0px #000000 solid;
+   padding: 0;
+   margin: 0;
+   text-align: left;
+}
+#wb_Text3 div
+{
+   text-align: left;
+}
+#wb_Text6 
+{
+   background-color: transparent;
+   border: 0px #000000 solid;
+   padding: 0;
+   margin: 0;
+   text-align: left;
+}
+#wb_Text6 div
+{
+   text-align: left;
+}
+#TextArea2
+{
+   border: 1px #A9A9A9 solid;
+   background-color: #FFFFFF;
+   color :#333333;
+   font-family: Arial;
+   font-size: 13px;
+   text-align: left;
+   resize: none;
+}
+#FileUpload1
+{
+   border: 1px #A9A9A9 solid;
+   background-color: #FFFFFF;
+   color: #333333;
+   font-family:Arial;
+   font-size: 13px;
+}
+#Button1
+{
+   border: 1px #A9A9A9 solid;
+   background-color: #F0F0F0;
+   color: #333333;
+   font-family: Arial;
+   font-size: 13px;
+}
+#Button2
+{
+   border: 1px #A9A9A9 solid;
+   background-color: #F0F0F0;
+   color: #333333;
+   font-family: Arial;
+   font-size: 13px;
+}
+#Shape3
+{
+   border-width: 0;
+}
+#TextArt1
+{
+   border-width: 0;
+}

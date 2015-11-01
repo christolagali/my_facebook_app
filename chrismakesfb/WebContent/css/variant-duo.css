@@ -1,0 +1,146 @@
+a
+{
+   color: #0000FF;
+   text-decoration: underline;
+}
+a:visited
+{
+   color: #800080;
+}
+a:active
+{
+   color: #0000FF;
+}
+a:hover
+{
+   color: #0000FF;
+   text-decoration: underline;
+}
+a.style1
+{
+   color: #B59E4E;
+   text-decoration: none;
+}
+a.style1:visited
+{
+   color: #B59E4E;
+   text-decoration: none;
+}
+a.style1:active
+{
+   color: #B59E4E;
+   text-decoration: none;
+}
+a.style1:hover
+{
+   color: #B59E4E;
+   text-decoration: underline;
+}
+a.style2
+{
+   color: #888888;
+   text-decoration: none;
+}
+a.style2:visited
+{
+   color: #888888;
+   text-decoration: none;
+}
+a.style2:active
+{
+   color: #888888;
+   text-decoration: none;
+}
+a.style2:hover
+{
+   color: #888888;
+   text-decoration: underline;
+}
+h1
+{
+   font-family: Arial;
+   font-size: 32px;
+   font-weight: bold;
+   font-style: normal;
+   text-decoration: none;
+   color: #000000;
+   background-color: transparent;
+   margin: 0px 0px 0px 0px;
+   padding: 0px 0px 0px 0px;
+   display: inline;
+}
+h2
+{
+   font-family: Arial;
+   font-size: 27px;
+   font-weight: bold;
+   font-style: normal;
+   text-decoration: none;
+   color: #000000;
+   background-color: transparent;
+   margin: 0px 0px 0px 0px;
+   padding: 0px 0px 0px 0px;
+   display: inline;
+}
+h3
+{
+   font-family: Arial;
+   font-size: 24px;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   color: #000000;
+   background-color: transparent;
+   margin: 0px 0px 0px 0px;
+   padding: 0px 0px 0px 0px;
+   display: inline;
+}
+h4
+{
+   font-family: Arial;
+   font-size: 21px;
+   font-weight: normal;
+   font-style: italic;
+   text-decoration: none;
+   color: #000000;
+   background-color: transparent;
+   margin: 0px 0px 0px 0px;
+   padding: 0px 0px 0px 0px;
+   display: inline;
+}
+h5
+{
+   font-family: Arial;
+   font-size: 19px;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   color: #000000;
+   background-color: transparent;
+   margin: 0px 0px 0px 0px;
+   padding: 0px 0px 0px 0px;
+   display: inline;
+}
+h6
+{
+   font-family: Arial;
+   font-size: 16px;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   color: #000000;
+   background-color: transparent;
+   margin: 0px 0px 0px 0px;
+   padding: 0px 0px 0px 0px;
+   display: inline;
+}
+.CustomStyle
+{
+   font-family: "Courier New";
+   font-size: 16px;
+   font-weight: bold;
+   font-style: normal;
+   text-decoration: none;
+   color: #000080;
+   background-color: transparent;
+}
